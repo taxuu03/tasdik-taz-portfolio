@@ -1,0 +1,82 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #1f1f1f;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Card Styling */
+.card {
+    background-color: #222;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
